@@ -1,0 +1,16 @@
+.header {
+  font-family: inherit;
+  height: 70px;
+  background-color: #f6f4eb;
+  -webkit-box-shadow: 0px 5px 41px 0px rgba(18, 18, 18, 1);
+  -moz-box-shadow: 0px 5px 41px 0px rgba(18, 18, 18, 1);
+  box-shadow: 0px 5px 41px 0px rgba(18, 18, 18, 1);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 70px;
+  aspect-ratio: 16/9;
+}
