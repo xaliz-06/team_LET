@@ -1,6 +1,6 @@
 li {
   list-style-type: none;
-  font-family: inherit;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .modal_actions {
