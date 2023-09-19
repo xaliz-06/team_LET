@@ -2,4 +2,10 @@
 
 This is the official repository for LET web application. Update your changes with proper messages. 
 
-Current Update - Working on the Navbar and Logging in & out system (boibhav)
+Current Update - completed the demo feed (boibhav)
+
+Upnext- > Search Bar
+        > Routing
+        > Authentication
+        > Landing Page
+        > Real-time video calling 
