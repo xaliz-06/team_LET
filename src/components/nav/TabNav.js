@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Outlet } from "react-router-dom";
-
-import styles from "./Feed.module.css";
+import { NavLink, Outlet } from "react-router-dom";
 import Break from "../../ui/Break";
-import FeedPost from "./feed_posts/post_cards/FeedPost";
 
-const Feed = () => {
+import styles from "./TabNav.module.css";
+
+const TabNav = () => {
   const tabs = [
     { name: "Home Feed", id: "#1", to: "" },
     { name: "Latest", id: "#2", to: "latest" },
@@ -24,9 +22,9 @@ const Feed = () => {
           {tabs.map((tab) => (
             <NavLink
               to={tab.to}
-              className={`${styles.tab} ${
-                tabSelect === tab.id ? styles.selected : ""
-              }`}
+              className={({ isActive }) =>
+                isActive ? styles.selected : undefined
+              }
               key={tab.id}
               onClick={() => changeTabHandler(tab.id)}
             >
@@ -53,4 +51,4 @@ const Feed = () => {
   );
 };
 
-export default Feed;
+export default TabNav;
