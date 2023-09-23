@@ -1,17 +1,28 @@
-.feed {
+.topic_feed {
   position: relative;
   flex: 1 1 auto;
   margin: 1.2rem;
+  padding: 0.8rem;
   max-width: calc(100% - 40vw);
   padding: 1rem;
-  height: 200vh;
+  height: 100%;
   background-color: #352f44;
   border-radius: 15px;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
 
-.section_control {
+.topic_content {
+  height: 100%;
+}
+
+.topics_nav {
+  position: sticky;
+  top: 0;
+  height: 10vh;
+}
+
+.topics_control {
   background: linear-gradient(to right, #fff, #fff),
     linear-gradient(
       to right,
@@ -23,7 +34,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.tabs_list {
+.topics_tabs_list {
   padding: 2rem 2rem 0rem;
   display: flex;
   flex-direction: row;
@@ -49,34 +60,6 @@
   border-radius: 2px;
   background: linear-gradient(
     to right,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 180, 1),
-    rgba(0, 100, 200, 1)
-  );
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 180, 1),
-    rgba(0, 100, 200, 1)
-  );
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    to bottom,
     rgba(255, 0, 0, 1),
     rgba(255, 0, 180, 1),
     rgba(0, 100, 200, 1)

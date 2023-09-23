@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import logoLET from "../../assets/let-better-logo.png";
 import styles from "./Header.module.css";
 
@@ -11,7 +13,10 @@ const Header = (props) => {
   return (
     <React.Fragment>
       <header className={styles.header}>
-        <img src={logoLET} alt="let-logo-img" className={styles.logo}></img>
+        <Link to="/">
+          <img src={logoLET} alt="let-logo-img" className={styles.logo}></img>
+        </Link>
+
         <div className={styles.search_bar}>
           <SearchBar></SearchBar>
         </div>

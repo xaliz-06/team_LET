@@ -16,7 +16,7 @@ const TabNav = () => {
   const [tabSelect, setTabSelect] = useState(tabs[0].id);
 
   const tabs_section = (
-    <nav>
+    <nav className={styles.tab_nav}>
       <div className={styles.section_control}>
         <ul className={styles.tabs_list}>
           {tabs.map((tab) => (

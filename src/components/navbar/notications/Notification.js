@@ -6,7 +6,7 @@ const Notification = () => {
 
   return (
     <NavbarBtn>
-      <i class={iconClasses}></i>
+      <i className={iconClasses}></i>
     </NavbarBtn>
   );
 };

@@ -4,11 +4,17 @@
   margin: 1.2rem;
   max-width: calc(100% - 40vw);
   padding: 1rem;
-  height: 200vh;
+  height: 100%;
   background-color: #352f44;
   border-radius: 15px;
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+
+.tab_nav {
+  position: sticky;
+  top: 0;
+  height: 10vh;
 }
 
 .section_control {

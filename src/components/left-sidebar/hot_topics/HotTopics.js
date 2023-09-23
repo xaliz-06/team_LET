@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./HotTopics.module.css";
 import TopicBtn from "./TopicBtn";
@@ -23,9 +24,11 @@ const HotTopics = () => {
     <React.Fragment>
       <div className={styles.container}>
         <div className={styles.topics_header}>
-          <h3 className={styles.header}>
-            Hot Topics <span className={styles.emoji}>🔥</span>
-          </h3>
+          <Link to="/topic/hot-topics">
+            <h3 className={styles.header}>
+              Hot Topics <span className={styles.emoji}>🔥</span>
+            </h3>
+          </Link>
         </div>
         <div className={styles.topics_container}>
           {topic_list.map((topic) => (
